@@ -11,3 +11,10 @@ Content: The repository contains essential game files such as game.js, index.htm
 Themes: The project is closely aligned with themes of tourism, hospitality, travelling, and gamification, specifically focusing on Venice.
 
 This project appears to be a creative application of web technologies to promote tourism in an interactive way.
+
+
+<br>
+
+
+![image](https://github.com/user-attachments/assets/0d45c6d3-302a-4d01-ad56-48c255172094)
+

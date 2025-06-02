@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang-key="gameTitle">The Venetian Riddle Weaver</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons (e.g., map marker, lightbulb) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1 data-lang-key="gameHeader">The Venetian Riddle Weaver</h1>
+        <div class="language-selector">
+          <label for="language-select" data-lang-key="selectLanguage"
+            >Select Language:</label
+          >
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="it">Italiano</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
+      </header>
+
+      <main id="gameArea">
+        <!-- Game sections will be dynamically loaded here -->
+        <section id="startScreen" class="game-section active">
+          <h2 data-lang-key="startScreenTitle">
+            Your Venice Adventure🧭🗺️ Awaits!
+          </h2>
+          <p data-lang-key="startScreenIntro">
+            Based on your interests, we've woven a unique path through Venice
+            just for you. Solve riddles, discover hidden gems, and unlock local
+            insights!
+          </p>
+          <button
+            id="startGameBtn"
+            class="game-button"
+            data-lang-key="startGameButton"
+          >
+            Start Your Venetian Journey
+          </button>
+        </section>
+
+        <section id="missionScreen" class="game-section">
+          <h2 data-lang-key="missionTitle">
+            Mission <span id="missionNumber">1</span>
+          </h2>
+          <div class="mission-content">
+            <p class="riddle-text" id="riddleText"></p>
+            <div class="hint-area">
+              <button
+                id="showHintBtn"
+                class="game-button hint-button"
+                data-lang-key="showHintButton"
+              >
+                <i class="fas fa-lightbulb"></i> Show Hint
+              </button>
+              <p class="hint-text" id="hintText"></p>
+            </div>
+            <div class="check-in-area">
+              <label for="checkInAnswer" data-lang-key="checkInLabel"
+                >Your Answer / Check-in:</label
+              >
+              <input
+                type="text"
+                id="checkInAnswer"
+                placeholder="Type your answer or click Check-in"
+              />
+              <button
+                id="checkInBtn"
+                class="game-button check-in-button"
+                data-lang-key="checkInButton"
+              >
+                <i class="fas fa-map-marker-alt"></i> Check-in
+              </button>
+              <p id="checkInMessage" class="error-message"></p>
+            </div>
+          </div>
+          <div class="local-insight-area">
+            <h3 data-lang-key="insightTitle">Local Lens Insight:</h3>
+            <p id="insightText"></p>
+          </div>
+          <div class="game-navigation">
+            <button
+              id="nextMissionBtn"
+              class="game-button next-button"
+              data-lang-key="nextMissionButton"
+            >
+              Next Mission
+            </button>
+            <button
+              id="endGameBtn"
+              class="game-button end-button"
+              data-lang-key="endGameButton"
+            >
+              End Game
+            </button>
+          </div>
+        </section>
+
+        <section id="summaryScreen" class="game-section">
+          <h2 data-lang-key="summaryTitle">Your Venetian Explorer Report</h2>
+          <div id="summaryContent">
+            <p data-lang-key="missionsCompleted">
+              Missions Completed: <span id="completedMissionsCount">0</span>
+            </p>
+            <p data-lang-key="totalPoints">
+              Total Points: <span id="totalPointsCount">0</span>
+            </p>
+            <h3 data-lang-key="badgesEarned">Badges Earned:</h3>
+            <ul id="badgesList"></ul>
+            <h3 data-lang-key="finalRecommendations">Final Recommendations:</h3>
+            <ul id="recommendationsList"></ul>
+          </div>
+          <button
+            id="restartGameBtn"
+            class="game-button"
+            data-lang-key="restartGameButton"
+          >
+            Play Again?
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

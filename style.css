@@ -1,0 +1,370 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #005f73,
+    #0a9396,
+    #94d2bd
+  ); /* Venetian lagoon gradient */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  /* ... other body styles ... */
+  background: url(./venezia2.jpg) no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire background */
+}
+
+.game-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden; /* For rounded corners */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00363d;
+}
+
+header h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  color: #00363d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.language-selector label {
+  margin-right: 10px;
+  color: #005f73;
+  font-weight: 600;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.game-section {
+  display: none; /* Hidden by default */
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.game-section.active {
+  display: block; /* Show active section */
+}
+
+.game-section h2 {
+  font-family: "Merriweather", serif;
+  color: #005f73;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 3px solid #0a9396;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.game-button {
+  background-color: #0a9396;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.game-button:hover {
+  background-color: #005f73;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button styles */
+#startGameBtn {
+  background-color: #0a9396;
+}
+
+.next-button {
+  background-color: #0a9396;
+}
+
+.end-button {
+  background-color: #d9534f; /* Red for ending */
+}
+.end-button:hover {
+  background-color: #c9302c;
+}
+
+.restart-button {
+  background-color: #5cb85c; /* Green for restart */
+}
+.restart-button:hover {
+  background-color: #4cae4c;
+}
+
+.hint-button {
+  background-color: #f0ad4e; /* Orange for hint */
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 15px auto;
+  display: inline-block; /* Allow it to sit next to hint text */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.hint-button:hover {
+  background-color: #ec971f;
+}
+
+.check-in-button {
+  background-color: #5bc0de; /* Blue for check-in */
+  font-size: 1.1em;
+  padding: 12px 25px;
+  margin-left: 10px;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.check-in-button:hover {
+  background-color: #31b0d5;
+}
+
+/* Mission Screen */
+.mission-content {
+  background-color: #f8fcfc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border: 1px solid #e0f2f7;
+}
+
+.riddle-text {
+  font-family: "Merriweather", serif;
+  font-size: 1.4em;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.hint-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hint-text {
+  font-style: italic;
+  color: #666;
+  margin-top: 15px;
+  font-size: 1.1em;
+  display: none; /* Hidden by default */
+}
+
+.check-in-area {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #eee;
+}
+
+.check-in-area label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #005f73;
+}
+
+#checkInAnswer {
+  padding: 12px 15px;
+  border: 2px solid #a7d9e0;
+  border-radius: 8px;
+  font-size: 1.1em;
+  width: calc(100% - 150px); /* Adjust width for button */
+  max-width: 400px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#checkInAnswer:focus {
+  outline: none;
+  border-color: #0a9396;
+  box-shadow: 0 0 0 3px rgba(10, 147, 150, 0.3);
+}
+
+.local-insight-area {
+  background-color: #e7f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d4eded;
+  display: none; /* Hidden until mission complete */
+}
+
+.local-insight-area h3 {
+  color: #005f73;
+  font-family: "Merriweather", serif;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#insightText {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+.game-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px dashed #eee;
+}
+
+.game-navigation button {
+  flex: 1;
+  margin: 0 10px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: 10px;
+  display: none; /* Hidden by default */
+}
+
+.error-message.active {
+  display: block;
+}
+
+/* Summary Screen */
+#summaryScreen h2 {
+  color: #005f73;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#summaryContent {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+}
+
+#summaryContent p {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  color: #444;
+}
+
+#summaryContent strong {
+  color: #005f73;
+}
+
+#badgesList,
+#recommendationsList {
+  list-style-type: "⭐ "; /* Custom bullet point */
+  padding-left: 25px;
+  margin-top: 10px;
+  color: #555;
+}
+
+#badgesList li,
+#recommendationsList li {
+  margin-bottom: 8px;
+  font-size: 1.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .game-section h2 {
+    font-size: 1.7em;
+  }
+
+  .riddle-text {
+    font-size: 1.2em;
+  }
+
+  .game-button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .check-in-area input,
+  .check-in-area button {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .check-in-button {
+    margin-left: auto; /* Override inline-block margin */
+  }
+
+  .game-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

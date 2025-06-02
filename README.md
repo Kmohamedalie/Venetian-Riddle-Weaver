@@ -1,3 +1,4 @@
+# Il Trama Enigmi Veneziano 🧩
 This [repository](https://github.com/Kmohamedalie/Venetian-Riddle-Weaver/) hosts a fascinating riddle game designed to enhance tourism in Venice through gamification. The project leverages the concept of a "riddle-game" to engage users with the city's unique charm and history.
 
 Key aspects of the repository include:

@@ -727,7 +727,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Seleziona Lingua:",
       startScreenTitle: "La Tua Avventura Veneziana Personalizzata Ti Aspetta!",
       startScreenIntro:
-        "In base ai tuoi interessi, abbiamo intessuto un percorso unico a Venezia solo per te. Risolvi enigmi, scopri gemme nascoste e sblocca intuizioni locali!",
+        "Risolvi enigmi, scopri gemme nascoste e sblocca intuizioni locali!",
       startGameButton: "Inizia il Tuo Viaggio Veneziano",
       missionTitle: "Missione",
       showHintButton: "Mostra Suggerimento",
@@ -754,7 +754,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Sélectionner la Langue :",
       startScreenTitle: "Votre Aventure Vénitienne Personnalisée Vous Attend !",
       startScreenIntro:
-        "En fonction de vos centres d'intérêt, nous avons tissé un chemin unique à travers Venise rien que pour vous. Résolvez des énigmes, découvrez des joyaux cachés et débloquez des aperçus locaux !",
+        "Résolvez des énigmes, découvrez des joyaux cachés et débloquez des aperçus locaux !",
       startGameButton: "Commencez Votre Voyage Vénitien",
       missionTitle: "Mission",
       showHintButton: "Afficher l'indice",
@@ -781,7 +781,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Sprache auswählen:",
       startScreenTitle: "Ihr personalisiertes Venedig-Abenteuer erwartet Sie!",
       startScreenIntro:
-        "Basierend auf Ihren Interessen haben wir einen einzigartigen Weg durch Venedig nur für Sie gewebt. Lösen Sie Rätsel, entdecken Sie versteckte Juwelen und schalten Sie lokale Einblicke frei!",
+        "Lösen Sie Rätsel, entdecken Sie versteckte Juwelen und schalten Sie lokale Einblicke frei!",
       startGameButton: "Starten Sie Ihre Venedig-Reise",
       missionTitle: "Mission",
       showHintButton: "Tipp anzeigen",

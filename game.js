@@ -727,7 +727,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Seleziona Lingua:",
       startScreenTitle: "La Tua Avventura Veneziana Personalizzata Ti Aspetta!",
       startScreenIntro:
-        "Risolvi enigmi, scopri gemme nascoste e sblocca intuizioni locali!",
+        "Risolvi enigmi🧩 scopri🔎 gemme💎 nascoste e sblocca🔓 intuizioni locali!",
       startGameButton: "Inizia il Tuo Viaggio Veneziano",
       missionTitle: "Missione",
       showHintButton: "Mostra Suggerimento",
@@ -754,7 +754,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Sélectionner la Langue :",
       startScreenTitle: "Votre Aventure Vénitienne Personnalisée Vous Attend !",
       startScreenIntro:
-        "Résolvez des énigmes, découvrez des joyaux cachés et débloquez des aperçus locaux !",
+        "Résolvez des énigmes🧩, découvrez🔎 des joyaux💎 cachés et débloquez🔓 des aperçus locaux !",
       startGameButton: "Commencez Votre Voyage Vénitien",
       missionTitle: "Mission",
       showHintButton: "Afficher l'indice",
@@ -781,7 +781,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Sprache auswählen:",
       startScreenTitle: "Ihr personalisiertes Venedig-Abenteuer erwartet Sie!",
       startScreenIntro:
-        "Lösen Sie Rätsel, entdecken Sie versteckte Juwelen und schalten Sie lokale Einblicke frei!",
+        "Lösen Sie Rätsel🧩, entdecken🔎 Sie versteckte Juwelen💎 und schalten Sie lokale🔓 Einblicke frei!",
       startGameButton: "Starten Sie Ihre Venedig-Reise",
       missionTitle: "Mission",
       showHintButton: "Tipp anzeigen",
@@ -808,7 +808,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectLanguage: "Seleccionar Idioma:",
       startScreenTitle: "¡Tu Aventura Personalizada en Venecia te Espera!",
       startScreenIntro:
-        "Basándonos en tus intereses, hemos tejido un camino único a través de Venecia solo para ti. ¡Resuelve enigmas, descubre joyas ocultas y desbloquea conocimientos locales!",
+        "¡Resuelve enigmas🧩, descubre🔎 joyas ocultas💎 y desbloquea🔓 conocimientos locales!",
       startGameButton: "Comienza Tu Viaje Veneciano",
       missionTitle: "Misión",
       showHintButton: "Mostrar Pista",
